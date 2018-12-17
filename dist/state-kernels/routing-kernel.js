@@ -53,7 +53,7 @@ var RoutingKernel = (function (_super) {
                 _this.router.navigate(operation.url, { reloadCurrent: operation.replace });
             }
             else {
-                _this.router.back();
+                _this.router.back({ force: true });
             }
         });
     };
