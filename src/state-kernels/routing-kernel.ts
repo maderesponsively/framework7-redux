@@ -46,7 +46,7 @@ export class RoutingKernel extends StateKernel<IRoutingState> {
                 if (operation.forward) {                    
                     this.router.navigate(operation.url, { reloadCurrent: operation.replace });                    
                 } else {
-                    this.router.back({force: true});
+                    this.router.back();
                 }
             });
     }
