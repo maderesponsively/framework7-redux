@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var redux_1 = require("redux");
 var initialState = {
-    history: []
+    history: ['/']
 };
 exports.historyReducer = function (state, action) {
     if (state === void 0) { state = []; }

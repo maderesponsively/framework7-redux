@@ -3,7 +3,7 @@ import {RoutingAction, NavigateToAction, GoBackAction} from '../actions/framewor
 import {IRoutingState} from '../../state/routing-state';
 
 const initialState: IRoutingState = {
-    history: []
+    history: ['/']
 };
 
 export const historyReducer: Reducer<string[]> = (state: string[] = [], action: RoutingAction) => {
