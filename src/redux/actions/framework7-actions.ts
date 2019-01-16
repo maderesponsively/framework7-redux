@@ -52,4 +52,8 @@ export interface GoBackAction {
     type: '@@FRAMEWORK7_GO_BACK';
 };
 
-export type RoutingAction = NavigateToAction | GoBackAction;
+export interface ClearRoutingAction {
+    type: '@@FRAMEWORK7_CLEAR_ROUTING';
+};
+
+export type RoutingAction = NavigateToAction | GoBackAction | ClearRoutingAction;

@@ -12,5 +12,10 @@ exports.goBack = function () {
         type: '@@FRAMEWORK7_GO_BACK'
     };
 };
+exports.clearRouting = function () {
+    return {
+        type: '@@FRAMEWORK7_CLEAR_ROUTING'
+    };
+};
 
 //# sourceMappingURL=routing-actions.js.map

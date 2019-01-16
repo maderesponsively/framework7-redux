@@ -13,6 +13,7 @@ exports.cancelConfirm = modal_actions_1.cancelConfirm;
 var routing_actions_1 = require("./redux/actions/routing-actions");
 exports.navigateTo = routing_actions_1.navigateTo;
 exports.goBack = routing_actions_1.goBack;
+exports.clearRouting = routing_actions_1.clearRouting;
 var framework7_reducer_1 = require("./redux/reducers/framework7-reducer");
 exports.framework7Reducer = framework7_reducer_1.framework7Reducer;
 var sync_1 = require("./redux/sync");

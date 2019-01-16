@@ -1,4 +1,4 @@
-import {NavigateToAction, GoBackAction} from './framework7-actions';
+import {NavigateToAction, GoBackAction, ClearRoutingAction} from './framework7-actions';
 
 export const navigateTo = (path: string, replace?: boolean): NavigateToAction => {
     return {
@@ -11,5 +11,11 @@ export const navigateTo = (path: string, replace?: boolean): NavigateToAction =>
 export const goBack = (): GoBackAction => {
     return {
         type: '@@FRAMEWORK7_GO_BACK'
+    };    
+};
+
+export const clearRouting = (): ClearRoutingAction => {
+    return {
+        type: '@@FRAMEWORK7_CLEAR_ROUTING'
     };    
 };

@@ -1,5 +1,5 @@
 import {combineReducers, Reducer} from 'redux';
-import {RoutingAction, NavigateToAction, GoBackAction} from '../actions/framework7-actions';
+import {RoutingAction, NavigateToAction, GoBackAction, ClearRoutingAction} from '../actions/framework7-actions';
 import {IRoutingState} from '../../state/routing-state';
 
 const initialState: IRoutingState = {
@@ -19,6 +19,10 @@ export const historyReducer: Reducer<string[]> = (state: string[] = [], action: 
             return [
                 ...state.slice(0, state.length - 1)
             ]; 
+            
+        case '@@FRAMEWORK7_CLEAR_ROUTING':        
+            return []
+
         default:
             return state;
     }

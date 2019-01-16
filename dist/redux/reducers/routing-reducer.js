@@ -14,6 +14,8 @@ exports.historyReducer = function (state, action) {
             ]);
         case '@@FRAMEWORK7_GO_BACK':
             return state.slice(0, state.length - 1).slice();
+        case '@@FRAMEWORK7_CLEAR_ROUTING':
+            return [];
         default:
             return state;
     }
