@@ -21,7 +21,9 @@ export const historyReducer: Reducer<string[]> = (state: string[] = [], action: 
             ]; 
             
         case '@@FRAMEWORK7_CLEAR_ROUTING':        
-            return ['/']
+            return [
+                action.path
+            ]
 
         default:
             return state;

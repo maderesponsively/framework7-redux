@@ -14,8 +14,9 @@ export const goBack = (): GoBackAction => {
     };    
 };
 
-export const clearRouting = (): ClearRoutingAction => {
+export const clearRouting = (path: string): ClearRoutingAction => {
     return {
-        type: '@@FRAMEWORK7_CLEAR_ROUTING'
+        type: '@@FRAMEWORK7_CLEAR_ROUTING',
+        path
     };    
 };

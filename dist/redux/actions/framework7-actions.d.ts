@@ -35,5 +35,6 @@ export interface GoBackAction {
 }
 export interface ClearRoutingAction {
     type: '@@FRAMEWORK7_CLEAR_ROUTING';
+    path: string;
 }
 export declare type RoutingAction = NavigateToAction | GoBackAction | ClearRoutingAction;

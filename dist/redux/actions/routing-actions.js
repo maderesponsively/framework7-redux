@@ -12,9 +12,10 @@ exports.goBack = function () {
         type: '@@FRAMEWORK7_GO_BACK'
     };
 };
-exports.clearRouting = function () {
+exports.clearRouting = function (path) {
     return {
-        type: '@@FRAMEWORK7_CLEAR_ROUTING'
+        type: '@@FRAMEWORK7_CLEAR_ROUTING',
+        path: path
     };
 };
 
